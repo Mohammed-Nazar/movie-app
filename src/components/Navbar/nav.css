@@ -1,0 +1,35 @@
+.nav {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav ul li {
+    padding: 0px 10px;
+}
+
+.nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.nav ul li input{
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.nav ul li input:focus{
+    padding: 5px;
+    outline: 1px solid rgb(176, 255, 176);
+    border-radius: 10px;
+}

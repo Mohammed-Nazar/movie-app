@@ -1,0 +1,35 @@
+.movie-de {
+    padding: 20px;
+}
+
+.movie--Img {
+    text-align: center;
+    margin: 20px;
+}
+
+.movie--title {
+    margin: 0px 0px 10px;
+}
+
+.movie--title p {
+    font-weight: 500;
+}
+
+.movie--about{
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.movie--det {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.movie--det li {
+    font-weight: 500;
+    padding: 5px 0px;
+}
+
+.movie--det li span {
+    font-weight: 600;
+}

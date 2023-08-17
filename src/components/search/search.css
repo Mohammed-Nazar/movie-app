@@ -1,0 +1,56 @@
+.resalut{
+    display: flex;
+    overflow-y: scroll;
+    flex-direction: column;
+    height: 10rem;
+    width: 8rem;
+    margin: 0px 15px;
+    border: 1px solid rgb(84, 75, 75);
+    padding: 5px 0px 0px 5px;
+    border-top: 0px;
+    border-radius: 10px;
+}
+
+ ::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.moive-se-card img{
+    width: 6rem;
+}
+
+.moive-se-card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed black;
+}
+
+.moive-se-card h4{
+    font-size: 14px;
+}
+.serach {
+    margin: 10px;
+}
+.serach input {
+    padding: 2px 5px;
+    border-radius: 100px;
+    margin-bottom: 2px;
+}
+
+.serach input:focus{
+    animation: inputAn 3s ;
+    outline: none;
+}
+
+@keyframes inputAn {
+    0%{
+        border-radius: 10px;
+    }
+    100%{
+        border-radius: 100px;
+        padding: 3px;
+    }
+}
