@@ -1,26 +1,29 @@
 .card-con{
     display: flex;
     flex-wrap: wrap;
-    margin: 20px 0px;
+    margin: 30px 0px;
+    text-align: center;
+    
 }
 
 .card{
-    text-align: start;
-    width: 10rem;
-    margin: 10px;
-    padding: 5px;
-    border: 2px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    border-radius: 10px;
+   padding: 10px;
+   
 }
 
-.card img{
-    width: 8rem;
-    height: 10rem;
-    margin-bottom: 10px;
+
+.card-img {
+    width: 25rem;
+    margin-bottom: 5px;
     object-fit: contain;
+    border-radius: 100px;
+    transition: 0.5s all ease-in-out;
+}
+
+.card-img:hover{
+    transform: scale(0.8);
+    transition: 0.5s all ease-in-out;
+    filter: blur(2px);
 }
 
 .card h3 {

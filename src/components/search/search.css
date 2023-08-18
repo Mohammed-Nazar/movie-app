@@ -2,18 +2,46 @@
     display: flex;
     overflow-y: scroll;
     flex-direction: column;
-    height: 10rem;
-    width: 8rem;
+    height: 14rem;
+    width: 14rem;
     margin: 0px 15px;
     border: 1px solid rgb(84, 75, 75);
     padding: 5px 0px 0px 5px;
     border-top: 0px;
     border-radius: 10px;
+    z-index: 1;
+    position: absolute;
+    background-color: #fff;
 }
 
  ::-webkit-scrollbar {
     display: none;
 }
+
+.serach--type {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.serach--type label {
+    display: block;
+    font-size: 10px;
+}
+
+.serach--type select {
+    background-color: #fff;
+    border: none;
+}
+
+.page {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    width: 100%;
+    padding: 5px;
+}
+
 
 
 
@@ -38,6 +66,7 @@
     padding: 2px 5px;
     border-radius: 100px;
     margin-bottom: 2px;
+    width: 14rem;
 }
 
 .serach input:focus{

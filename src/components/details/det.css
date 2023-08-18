@@ -33,3 +33,19 @@
 .movie--det li span {
     font-weight: 600;
 }
+
+.lang {
+    margin: 10px;
+}
+
+.lang label {
+    padding: 0px 10px;
+}
+
+.lang select {
+    border: none;
+}
+
+.ar {
+    direction:  rtl;
+}
