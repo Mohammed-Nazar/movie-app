@@ -1,0 +1,16 @@
+.select-con {
+    margin-top: 40px;
+}
+
+.select-home {
+    display: inline;
+    margin: 10px;
+}
+
+.genre-label {
+    margin-right: 5px;
+}
+
+.genre-select{
+    border: none;
+}
