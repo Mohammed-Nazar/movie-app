@@ -24,7 +24,7 @@ export default function Det() {
       fetch(
         `https://translate.googleapis.com/translate_a/single?client=gtx&dt=t&sl=auto&tl=ar&q=${movieDet?.Genre}`
       ),
-      
+
       fetch(
         `https://translate.googleapis.com/translate_a/single?client=gtx&dt=t&sl=auto&tl=ar&q=${movieDet?.Actors}`
       ),
@@ -39,22 +39,27 @@ export default function Det() {
       ),
     ];
     if (lang == "ar") {
-      Promise.all(fetchArr)
-        .then((res) => {
-          Promise.all(
-            res.map((item) => {
-              return item.json();
-            })
-          ).then((data) => setmovieDet({...movieDet, 
-          Plot: data[0][0][0][0],
-          Type: data[1][0][0][0],
-          Genre: data[2][0][0][0],
-          Actors: data[3][0][0][0],
-          Awards: data[4][0][0][0],
-          Country: data[5][0][0][0],
-          Language: data[6][0][0][0],
-          }))
-        })
+      Promise.all(fetchArr).then((res) => {
+        Promise.all(
+          res.map((item) => {
+            return item.json();
+          })
+        ).then((data) => {
+          console.log(data)
+          const secondDe = data[0][0][1] ? data[0][0][1][0]: "";
+          const thirdDe = data[0][0][2] ? data[0][0][2][0]: "";
+          setmovieDet({
+            ...movieDet,
+            Plot: data[0][0][0][0] + secondDe+ thirdDe,
+            Type: data[1][0][0][0],
+            Genre: data[2][0][0][0],
+            Actors: data[3][0][0][0],
+            Awards: data[4][0][0][0],
+            Country: data[5][0][0][0],
+            Language: data[6][0][0][0],
+          });
+        });
+      });
     }
   }, [lang]);
 
